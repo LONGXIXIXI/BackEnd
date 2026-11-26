@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录首页</title>
+</head>
+<body>
+    登录人：<span id="loginUser"></span>
+    <script src="./jquery-4.1.0.min.js"></script>
+    <script>
+        $.ajax({
+            type: "get",
+            url: "/user/getLoginUser",
+            success: function(userName){
+                $("#loginUser").text(userName)
+            }
+        });
+    </script>
+</body>
+</html>
