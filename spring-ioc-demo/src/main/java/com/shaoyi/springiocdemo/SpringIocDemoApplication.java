@@ -43,9 +43,9 @@ public class SpringIocDemoApplication {
 //        UserInfo bean2 = context.getBean("u2",UserInfo.class);
 //        System.out.println(bean2);
 
-        //属性注入
-        UserController userController = context.getBean(UserController.class);
-        userController.sayHi();
+//        //属性注入
+//        UserController userController = context.getBean(UserController.class);
+//        userController.sayHi();
     }
 
 }
